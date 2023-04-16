@@ -1,20 +1,24 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Portfolio.Models;
 using System.Diagnostics;
+
 
 namespace Portfolio.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly Contexto _contexto;
+        public HomeController(ILogger<HomeController> logger, Contexto contexto)
         {
             _logger = logger;
+            _contexto = contexto;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string scrollTo = null)
         {
+            ViewBag.ScrollTo = scrollTo; // passa o valor do parâmetro para a ViewBag
             return View();
         }
 
@@ -53,10 +57,42 @@ namespace Portfolio.Controllers
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult Contato()
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult Create(Contato model)
+        {
+            if (ModelState.IsValid)
+            {
+                // Salva a mensagem no banco de dados
+                _contexto.Add(model);
+                _contexto.SaveChanges();
+
+                // Armazena a mensagem de sucesso na TempData
+                TempData["MensagemSucesso"] = "Sua mensagem foi enviada. Obrigado!";
+
+                // Redireciona de volta para a página
+                return RedirectToAction("Index", new { scrollTo = "contact" });
+
+            }
+            else
+            {
+                // Armazena a mensagem de erro na TempData
+                TempData["MensagemErro"] = "Por favor, preencha todos os campos corretamente.";
+
+                // Retorna para a página
+                return View(model);
+            }
+        }
+
+
+
+
+
+
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

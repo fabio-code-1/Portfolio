@@ -54,6 +54,22 @@
 <!-- ======= Contact Section ======= -->
 <section id="contact" class="contact">
     @{
-        await Html.RenderPartialAsync("Contact");
+        await Html.RenderPartialAsync("Contato");
     }
 </section><!-- End Contact Section -->
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // obtém o valor da ViewBag e rola a página até a seção correspondente
+            var scrollTo = '@ViewBag.ScrollTo';
+            if (scrollTo) {
+                $('html, body').animate({
+                    scrollTop: $('#' + scrollTo).offset().top
+                }, 1000);
+            }
+        });
+    </script>
+}
+
+

@@ -1,7 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using Portfolio.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<Contexto>
+    (options => options.UseSqlServer("Data Source=FABIO;Initial Catalog=Portfolio;Integrated Security=True"));
 
 var app = builder.Build();
 
