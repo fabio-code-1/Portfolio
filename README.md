@@ -1,2 +1,2 @@
 # Portfolio
-inicio do projeto - front ja definido 
+Projeto finalizado logo mais faço o readme.md dele
