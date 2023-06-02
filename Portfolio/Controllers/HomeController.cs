@@ -16,9 +16,10 @@ namespace Portfolio.Controllers
             _contexto = contexto;
         }
 
-        public IActionResult Index(string scrollTo = null)
+        public IActionResult Index(string? scrollTo = null)
         {
             ViewBag.ScrollTo = scrollTo; // passa o valor do parâmetro para a ViewBag
+
             return View();
         }
 
@@ -32,10 +33,11 @@ namespace Portfolio.Controllers
             return View();
         }
 
-        public IActionResult Skills()
+        public IActionResult Skill()
         {
             return View();
         }
+
 
         public IActionResult Resume()
         {

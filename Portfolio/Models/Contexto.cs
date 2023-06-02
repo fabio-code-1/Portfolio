@@ -10,6 +10,8 @@ namespace Portfolio.Models
         }
 
         public DbSet<Contato> Contatos { get; set; }
+        public DbSet<Skills> Skills { get; set; }
+
 
     }
 }
