@@ -1,0 +1,184 @@
+﻿body.dark-mode {
+    background-color: #222222;
+    color: #FFFFFF;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.dark-mode .section-title h2 {
+    color: #E95D0F; /* Substitua pelo código da nova cor laranja para o modo escuro */
+    transition: color 0.5s ease;
+}
+
+.dark-mode .about .content h3 {
+    color: #FFA867; /* Substitua pelo código da nova cor laranja mais fraca para o modo escuro */
+    transition: color 0.5s ease;
+}
+
+.dark-mode .section-title h2::after {
+    background: #ff9725; /* Substitua pelo código da nova cor laranja mais clara para o modo escuro */
+    transition: background-color 0.5s ease;
+}
+
+.dark-mode .about .content ul i {
+    color: #ff5600; /* Substitua pelo código da nova cor laranja mais clara para o modo escuro */
+    transition: color 0.5s ease;
+}
+
+.dark-mode .facts .count-box i {
+    color: #ff5600; /* Substitua pelo código da nova cor laranja mais clara para o modo escuro */
+    transition: color 0.5s ease;
+}
+
+.dark-mode .facts .count-box span {
+    color: #FFA726; /* Substitua pelo código da nova cor laranja neon para o modo escuro */
+    transition: color 0.5s ease;
+}
+
+.dark-mode .facts .count-box p {
+    color: #FFC689; /* Substitua pelo código da nova cor laranja para o modo escuro */
+    transition: color 0.5s ease;
+}
+
+.dark-mode #header {
+    background: #0a0909; /* Substitua pelo código da nova cor de fundo para o modo escuro */
+    transition: background-color 0.5s ease;
+}
+
+.dark-mode #footer {
+    background: #0d0b0b; /* Substitua pelo código da nova cor de fundo para o modo escuro */
+    transition: background-color 0.5s ease;
+}
+
+.dark-mode .resume .resume-item {
+    border-left-color: #ff5600; /* Substitua pelo código da nova cor laranja para o modo escuro */
+}
+
+.dark-mode .resume .resume-item::before {
+    border-color: #ff5600; /* Substitua pelo código da nova cor laranja para o modo escuro */
+}
+.dark-mode .resume .resume-title {
+    color: #FFA726; /* Substitua pelo código da nova cor laranja para o modo escuro */
+}
+
+.dark-mode .resume .resume-item h4 {
+    color: #FFA867; /* Substitua pelo código da nova cor laranja para o modo escuro */
+}
+
+.dark-mode .section-bg {
+    background: #191818; /* Substitua pelo código da nova cor de fundo para o modo escuro */
+}
+
+.dark-mode .skills .progress-bar {
+    background-color: #ff5600; /* Substitua pelo código da nova cor da barra de progresso para o modo escuro */
+}
+
+.dark-mode .skills .progress .skill {
+    color: #ff8d00; /* Substitua pelo código da nova cor do texto para o modo escuro */
+}
+
+.dark-mode .resume .resume-item h5 {
+    background: #ff8d00; /* Substitua pelo código da nova cor de fundo para o modo escuro */
+}
+
+.dark-mode .portfolio #portfolio-flters li:hover,
+.dark-mode .portfolio #portfolio-flters li.filter-active {
+    color: #ff8d00; /* Substitua pelo código da nova cor para o modo escuro */
+}
+
+.dark-mode .services .icon {
+    background: #ff8d00; /* Substitua pelo código da nova cor para o modo escuro /
+border-color: #ff8d00; / Substitua pelo código da nova cor para o modo escuro */
+}
+
+.dark-mode .services .title a {
+    color: #ff8d00; /* Substitua pelo código da nova cor para o modo escuro */
+}
+
+.dark-mode .services .icon {
+    background: #ff8d00; /* Substitua pelo código da nova cor laranja para o modo escuro */
+    border-color: #fff; /* Substitua pelo código da nova cor laranja para a borda no modo escuro */
+}
+
+.dark-mode .services .icon-box:hover .icon i {
+    color: #ff8d00; /* Substitua pelo código da nova cor laranja para o modo escuro */
+}
+
+.dark-mode .testimonials .testimonial-item .quote-icon-left,
+.dark-mode .testimonials .testimonial-item .quote-icon-right {
+    color: #FFC689;
+    font-size: 26px;
+}
+
+.dark-mode .mobile-nav-toggle {
+    background-color: #ff8d00;
+}
+
+.dark-mode .testimonials .testimonial-item p {
+    background: #222222;
+}
+
+.dark-mode .testimonials .swiper-pagination .swiper-pagination-bullet {
+    border-color: #ff9725;
+}
+
+
+.dark-mode .testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #ff8d00; /* Substitua pelo código da nova cor para o modo escuro */
+}
+
+.dark-mode .contact .php-email-form {
+    background: #191818; /* Substitua pelo código da nova cor para o modo escuro */
+}
+
+.dark-mode .contact .info {
+    background: #191818; /* Substitua pelo código da nova cor para o modo escuro */
+}
+
+.dark-mode .contact .info i {
+    color: #E95D0F; /* Substitua pelo código da nova cor para o modo escuro */
+}
+
+.dark-mode .contact .info h4 {
+    color: #ff8d00; /* Substitua pelo código da nova cor laranja para o modo escuro */
+}
+
+.dark-mode .contact .info p {
+    color: #FFA867; /* Substitua pelo código da nova cor laranja para o modo escuro */
+}
+
+.dark-mode .back-to-top {
+    background: #E95D0F; /* Substitua pelo código da nova cor laranja para o modo escuro */
+}
+
+.dark-mode .contact .info .email:hover i,
+.dark-mode .contact .info .address:hover i,
+.dark-mode .contact .info .phone:hover i {
+    background: #ff8d00; /* Substitua pelo código da nova cor laranja para o modo escuro */
+    color: #fff;
+}
+
+.dark-mode .contact .php-email-form button[type=submit] {
+    background: #ff8d00; /* Substitua pelo código da nova cor laranja para o modo escuro */
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.dark-mode .form-control {
+    border: 1px solid #ff8d00;
+}
+.dark-mode .nav-menu a:hover i,
+.dark-mode .nav-menu .active i,
+.dark-mode .nav-menu .active:focus i,
+.dark-mode .nav-menu li:hover > a i {
+    color: #ff8d00; /* Substitua pelo código da nova cor laranja para o modo escuro */
+}
+
+.dark-mode #header .profile .social-links a:hover {
+    background: #ff8d00; /* Substitua pelo código da nova cor laranja para o modo escuro */
+}
+
+.dark-mode #hero p span {
+    border-bottom: 3px solid #ff8d00;
+}

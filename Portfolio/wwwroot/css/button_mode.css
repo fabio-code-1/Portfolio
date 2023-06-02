@@ -1,0 +1,94 @@
+﻿/* Estilo iOS */
+.switch__container {
+    margin: 15px auto; /* Reduza a margem superior e inferior */
+    width: 60px; /* Reduza a largura */
+}
+
+.switch {
+    visibility: hidden;
+    position: absolute;
+    margin-left: -9999px;
+}
+
+    .switch + label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+    }
+
+.switch--shadow + label {
+    padding: 1px; /* Reduza o preenchimento */
+    width: 60px; /* Reduza a largura */
+    height: 30px; /* Reduza a altura */
+    background-color: #dddddd;
+    border-radius: 30px; /* Reduza o raio da borda */
+}
+
+    .switch--shadow + label:before,
+    .switch--shadow + label:after {
+        display: block;
+        position: absolute;
+        top: 1px; /* Ajuste a posição superior */
+        left: 1px; /* Ajuste a posição esquerda */
+        bottom: 1px; /* Ajuste a posição inferior */
+        content: "";
+    }
+
+    .switch--shadow + label:before {
+        right: 1px;
+        background-color: #f1f1f1;
+        border-radius: 30px; /* Reduza o raio da borda */
+        transition: background 0.4s;
+    }
+
+    .switch--shadow + label:after {
+        width: 31px; /* Reduza o diâmetro */
+        background-color: #fff;
+        border-radius: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        transition: all 0.4s;
+    }
+
+.switch--shadow:checked + label:before {
+    background-color: #8ce196;
+}
+
+.switch--shadow:checked + label:after {
+    transform: translateX(28px); /* Ajuste o valor para metade do novo diâmetro */
+}
+
+/* Estilo Flat */
+.switch--flat + label {
+    padding: 1px; /* Reduza o preenchimento */
+    width: 60px; /* Reduza a largura */
+    height: 30px; /* Reduza a altura */
+    background-color: #dddddd;
+    border-radius: 30px; /* Reduza o raio da borda */
+    transition: background 0.4s;
+}
+
+    .switch--flat + label:before,
+    .switch--flat + label:after {
+        display: block;
+        position: absolute;
+        content: "";
+    }
+
+    .switch--flat + label:before {
+        top: 2px; /* Ajuste a posição superior */
+        left: 2px; /* Ajuste a posição esquerda */
+        bottom: 2px; /* Ajuste a posição inferior */
+        right: 2px; /* Ajuste a posição direita */
+        background-color: #fff;
+        border-radius: 30px; /* Reduza o raio da borda */
+        transition: background 0.4s;
+    }
+
+    .switch--flat + label:after {
+        top: 4px; /* Ajuste a posição superior */
+        left: 4px; /* Ajuste a posição esquerda */
+        bottom: 4px; /* Ajuste a posição inferior */
+        width: 26px; /* Reduza o diâmetro */
+    }
